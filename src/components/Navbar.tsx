@@ -33,7 +33,7 @@ export const Navbar = () => {
           <div className="w-10 h-10 bg-brand rounded-full flex items-center justify-center shadow-lg shadow-brand/20 overflow-hidden">
             <img src="/logo.svg" alt="Nuga Pay Logo" className="w-full h-full object-cover" />
           </div>
-          <span className="text-2xl font-display font-bold tracking-tight text-slate-900">Nuga<span className="text-brand">Pay</span></span>
+          <span className="text-xl sm:text-2xl font-display font-bold tracking-tight text-slate-900">Nuga<span className="text-brand">Pay</span></span>
         </Link>
 
         {/* Desktop Nav */}
@@ -75,7 +75,7 @@ export const Navbar = () => {
                 <div className="w-10 h-10 bg-brand rounded-full flex items-center justify-center">
                   <img src="/logo.svg" alt="Nuga Pay Logo" className="w-full h-full object-cover" />
                 </div>
-                <span className="text-2xl font-display font-bold tracking-tight text-slate-900">Nuga<span className="text-brand">Pay</span></span>
+                <span className="text-xl sm:text-2xl font-display font-bold tracking-tight text-slate-900">Nuga<span className="text-brand">Pay</span></span>
               </Link>
               <button onClick={() => setIsMobileMenuOpen(false)} className="p-2 text-slate-600">
                 <X size={32} />

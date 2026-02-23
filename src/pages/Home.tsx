@@ -88,7 +88,7 @@ const Hero = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-5xl lg:text-7xl font-display font-bold text-slate-900 leading-[1.1] mb-6"
+              className="text-4xl sm:text-5xl lg:text-7xl font-display font-bold text-slate-900 leading-[1.1] mb-6"
             >
               The Future of <span className="text-brand">Nigerian Finance.</span>
             </motion.h1>
@@ -272,7 +272,7 @@ const Features = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-4xl lg:text-5xl font-display font-bold text-slate-900 mb-6"
+            className="text-3xl sm:text-4xl lg:text-5xl font-display font-bold text-slate-900 mb-6"
           >
             Everything you need to <br />scale your finances.
           </motion.h3>
@@ -351,7 +351,7 @@ const TrustSection = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.1 }}
-                className="text-4xl lg:text-5xl font-display font-bold text-white mb-8"
+                className="text-3xl sm:text-4xl lg:text-5xl font-display font-bold text-white mb-8"
               >
                 Your security is our <br />highest priority.
               </motion.h3>
@@ -495,7 +495,7 @@ export const Home = () => {
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
-                className="text-4xl lg:text-6xl font-display font-bold text-white mb-8"
+                className="text-3xl sm:text-4xl lg:text-6xl font-display font-bold text-white mb-8"
               >
                 Ready to transform your <br />financial future?
               </motion.h2>

@@ -11,7 +11,7 @@ export const Contact = () => {
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
           >
-            <h1 className="text-5xl lg:text-7xl font-display font-bold text-slate-900 mb-8">
+            <h1 className="text-4xl sm:text-5xl lg:text-7xl font-display font-bold text-slate-900 mb-8">
               Talk to an <span className="text-brand">Expert.</span>
             </h1>
             <p className="text-xl text-slate-600 mb-12 leading-relaxed">

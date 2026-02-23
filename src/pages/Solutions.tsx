@@ -36,7 +36,7 @@ export const Solutions = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-5xl lg:text-7xl font-display font-bold text-slate-900 mb-6"
+            className="text-4xl sm:text-5xl lg:text-7xl font-display font-bold text-slate-900 mb-6"
           >
             Financial Solutions for the <span className="text-brand">Modern World.</span>
           </motion.h1>

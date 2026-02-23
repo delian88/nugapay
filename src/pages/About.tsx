@@ -22,7 +22,7 @@ export const About = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-5xl lg:text-7xl font-display font-bold text-slate-900 mb-8"
+              className="text-4xl sm:text-5xl lg:text-7xl font-display font-bold text-slate-900 mb-8"
             >
               The Nuga Pay <span className="text-brand">Story.</span>
             </motion.h1>
