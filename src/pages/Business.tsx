@@ -34,12 +34,22 @@ export const Business = () => {
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
           >
-            <h1 className="text-5xl lg:text-7xl font-display font-bold text-slate-900 mb-8 leading-tight">
+            <motion.h1 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="text-5xl lg:text-7xl font-display font-bold text-slate-900 mb-8 leading-tight"
+            >
               Scale Your Business <br />with <span className="text-brand">Nuga Business.</span>
-            </h1>
-            <p className="text-xl text-slate-600 mb-10 leading-relaxed">
+            </motion.h1>
+            <motion.p 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+              className="text-xl text-slate-600 mb-10 leading-relaxed"
+            >
               The all-in-one financial operating system for Nigerian enterprises. Manage payments, payroll, and expenses in one unified dashboard.
-            </p>
+            </motion.p>
             <div className="flex gap-4">
               <button className="bg-brand text-white px-8 py-4 rounded-2xl font-bold text-lg hover:bg-brand-dark transition-all shadow-xl shadow-brand/20">
                 Open Business Account

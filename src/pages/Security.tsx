@@ -33,12 +33,22 @@ export const Security = () => {
             <Shield size={18} />
             Institutional-Grade Security
           </div>
-          <h1 className="text-5xl lg:text-7xl font-display font-bold text-slate-900 mb-8">
+          <motion.h1 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="text-5xl lg:text-7xl font-display font-bold text-slate-900 mb-8"
+          >
             Your Assets, <span className="text-brand">Fortified.</span>
-          </h1>
-          <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+          </motion.h1>
+          <motion.p 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+            className="text-xl text-slate-600 max-w-3xl mx-auto"
+          >
             Security isn't just a feature at Nuga Pay—it's our foundation. We employ multiple layers of defense to protect your wealth and data.
-          </p>
+          </motion.p>
         </motion.div>
 
         <div className="grid lg:grid-cols-3 gap-12 mb-32">

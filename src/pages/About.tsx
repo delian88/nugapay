@@ -18,15 +18,30 @@ export const About = () => {
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
           >
-            <h1 className="text-5xl lg:text-7xl font-display font-bold text-slate-900 mb-8">
+            <motion.h1 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="text-5xl lg:text-7xl font-display font-bold text-slate-900 mb-8"
+            >
               The Nuga Pay <span className="text-brand">Story.</span>
-            </h1>
-            <p className="text-xl text-slate-600 mb-8 leading-relaxed">
+            </motion.h1>
+            <motion.p 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+              className="text-xl text-slate-600 mb-8 leading-relaxed"
+            >
               Nuga Pay was born out of a simple realization: Nigeria's digital economy was growing faster than its financial infrastructure. As a subsidiary of the Nuga Group, we set out to build the bridge.
-            </p>
-            <p className="text-lg text-slate-500 mb-10 leading-relaxed">
+            </motion.p>
+            <motion.p 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.6 }}
+              className="text-lg text-slate-500 mb-10 leading-relaxed"
+            >
               Today, we are more than just a payment gateway. We are the financial backbone for thousands of businesses and the trusted wealth partner for half a million Nigerians.
-            </p>
+            </motion.p>
             <div className="grid grid-cols-2 gap-8">
               {stats.map((s, i) => (
                 <div key={i}>

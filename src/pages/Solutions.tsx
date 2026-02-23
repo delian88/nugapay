@@ -32,12 +32,22 @@ export const Solutions = () => {
           animate={{ opacity: 1, y: 0 }}
           className="text-center mb-20"
         >
-          <h1 className="text-5xl lg:text-7xl font-display font-bold text-slate-900 mb-6">
+          <motion.h1 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="text-5xl lg:text-7xl font-display font-bold text-slate-900 mb-6"
+          >
             Financial Solutions for the <span className="text-brand">Modern World.</span>
-          </h1>
-          <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+          </motion.h1>
+          <motion.p 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+            className="text-xl text-slate-600 max-w-3xl mx-auto"
+          >
             From personal wealth management to enterprise-grade payment infrastructure, Nuga Pay provides the tools you need to succeed in the digital economy.
-          </p>
+          </motion.p>
         </motion.div>
 
         <div className="grid lg:grid-cols-3 gap-8 mb-24">

@@ -83,12 +83,22 @@ const Hero = () => {
               </span>
               Empowering Nigeria's Digital Economy
             </div>
-            <h1 className="text-5xl lg:text-7xl font-display font-bold text-slate-900 leading-[1.1] mb-6">
+            <motion.h1 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="text-5xl lg:text-7xl font-display font-bold text-slate-900 leading-[1.1] mb-6"
+            >
               The Future of <span className="text-brand">Nigerian Finance.</span>
-            </h1>
-            <p className="text-xl text-slate-700 leading-relaxed mb-10 max-w-xl">
+            </motion.h1>
+            <motion.p 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+              className="text-xl text-slate-700 leading-relaxed mb-10 max-w-xl"
+            >
               Nuga Pay is the premier fintech subsidiary of Nuga Group. Seamlessly bridge the gap between local commerce and global opportunities with Nigeria's most trusted payment gateway.
-            </p>
+            </motion.p>
             <div className="flex flex-col sm:flex-row gap-4">
               <button className="bg-brand text-white px-8 py-4 rounded-2xl font-bold text-lg hover:bg-brand-dark transition-all shadow-xl shadow-brand/20 flex items-center justify-center gap-2 group">
                 Open Naira Account
@@ -248,17 +258,56 @@ const Features = () => {
     <section id="solutions" className="py-24 bg-slate-50">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-20">
-          <h2 className="text-sm font-bold text-brand uppercase tracking-[0.2em] mb-4">Our Solutions</h2>
-          <h3 className="text-4xl lg:text-5xl font-display font-bold text-slate-900 mb-6">Everything you need to <br />scale your finances.</h3>
-          <p className="text-lg text-slate-600 max-w-2xl mx-auto">
+          <motion.h2 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-sm font-bold text-brand uppercase tracking-[0.2em] mb-4"
+          >
+            Our Solutions
+          </motion.h2>
+          <motion.h3 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.1 }}
+            className="text-4xl lg:text-5xl font-display font-bold text-slate-900 mb-6"
+          >
+            Everything you need to <br />scale your finances.
+          </motion.h3>
+          <motion.p 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2 }}
+            className="text-lg text-slate-600 max-w-2xl mx-auto"
+          >
             Nuga Pay provides a comprehensive suite of financial tools designed to help modern businesses and individuals thrive in a digital-first world.
-          </p>
+          </motion.p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <motion.div 
+          variants={{
+            hidden: { opacity: 0 },
+            show: {
+              opacity: 1,
+              transition: {
+                staggerChildren: 0.1
+              }
+            }
+          }}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+          className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
+        >
           {features.map((feature, index) => (
             <motion.div
               key={index}
+              variants={{
+                hidden: { opacity: 0, y: 20 },
+                show: { opacity: 1, y: 0 }
+              }}
               whileHover={{ y: -5 }}
               className="bg-white p-10 rounded-[2rem] border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300"
             >
@@ -271,7 +320,7 @@ const Features = () => {
               </p>
             </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );
@@ -288,11 +337,46 @@ const TrustSection = () => {
 
           <div className="grid lg:grid-cols-2 gap-16 items-center p-12 lg:p-24 relative z-10">
             <div>
-              <h2 className="text-brand font-bold uppercase tracking-widest text-sm mb-6">Security First</h2>
-              <h3 className="text-4xl lg:text-5xl font-display font-bold text-white mb-8">Your security is our <br />highest priority.</h3>
+              <motion.h2 
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                className="text-brand font-bold uppercase tracking-widest text-sm mb-6"
+              >
+                Security First
+              </motion.h2>
+              <motion.h3 
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.1 }}
+                className="text-4xl lg:text-5xl font-display font-bold text-white mb-8"
+              >
+                Your security is our <br />highest priority.
+              </motion.h3>
               
-              <div className="space-y-8">
-                <div className="flex gap-6">
+              <motion.div 
+                variants={{
+                  hidden: { opacity: 0 },
+                  show: {
+                    opacity: 1,
+                    transition: {
+                      staggerChildren: 0.2
+                    }
+                  }
+                }}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true }}
+                className="space-y-8"
+              >
+                <motion.div 
+                  variants={{
+                    hidden: { opacity: 0, x: -20 },
+                    show: { opacity: 1, x: 0 }
+                  }}
+                  className="flex gap-6"
+                >
                   <div className="shrink-0 w-12 h-12 bg-white/10 rounded-2xl flex items-center justify-center text-brand">
                     <Shield size={24} />
                   </div>
@@ -300,9 +384,15 @@ const TrustSection = () => {
                     <h4 className="text-xl font-bold text-white mb-2">Institutional-Grade Custody</h4>
                     <p className="text-slate-400">We use multi-signature cold storage and hardware security modules to ensure your funds are always safe.</p>
                   </div>
-                </div>
+                </motion.div>
                 
-                <div className="flex gap-6">
+                <motion.div 
+                  variants={{
+                    hidden: { opacity: 0, x: -20 },
+                    show: { opacity: 1, x: 0 }
+                  }}
+                  className="flex gap-6"
+                >
                   <div className="shrink-0 w-12 h-12 bg-white/10 rounded-2xl flex items-center justify-center text-brand">
                     <Lock size={24} />
                   </div>
@@ -310,9 +400,15 @@ const TrustSection = () => {
                     <h4 className="text-xl font-bold text-white mb-2">Regulatory Compliance</h4>
                     <p className="text-slate-400">Nuga Pay is fully licensed and regulated in all jurisdictions where we operate, adhering to strict AML/KYC standards.</p>
                   </div>
-                </div>
+                </motion.div>
 
-                <div className="flex gap-6">
+                <motion.div 
+                  variants={{
+                    hidden: { opacity: 0, x: -20 },
+                    show: { opacity: 1, x: 0 }
+                  }}
+                  className="flex gap-6"
+                >
                   <div className="shrink-0 w-12 h-12 bg-white/10 rounded-2xl flex items-center justify-center text-brand">
                     <CheckCircle2 size={24} />
                   </div>
@@ -320,8 +416,8 @@ const TrustSection = () => {
                     <h4 className="text-xl font-bold text-white mb-2">Real-time Monitoring</h4>
                     <p className="text-slate-400">Our AI-driven systems monitor every transaction 24/7 to detect and prevent fraudulent activities before they happen.</p>
                   </div>
-                </div>
-              </div>
+                </motion.div>
+              </motion.div>
             </div>
 
             <div className="relative">
@@ -394,10 +490,23 @@ export const Home = () => {
             <div className="absolute top-0 left-0 w-full h-full bg-[linear-gradient(45deg,rgba(255,255,255,0.1)_25%,transparent_25%,transparent_50%,rgba(255,255,255,0.1)_50%,rgba(255,255,255,0.1)_75%,transparent_75%,transparent)] bg-[length:100px_100px] opacity-20" />
             
             <div className="relative z-10">
-              <h2 className="text-4xl lg:text-6xl font-display font-bold text-white mb-8">Ready to transform your <br />financial future?</h2>
-              <p className="text-xl text-brand-light mb-12 max-w-2xl mx-auto">
+              <motion.h2 
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                className="text-4xl lg:text-6xl font-display font-bold text-white mb-8"
+              >
+                Ready to transform your <br />financial future?
+              </motion.h2>
+              <motion.p 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.1 }}
+                className="text-xl text-brand-light mb-12 max-w-2xl mx-auto"
+              >
                 Join thousands of businesses already using Nuga Pay to power their global operations. Start your journey today.
-              </p>
+              </motion.p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <button className="bg-white text-brand px-10 py-5 rounded-2xl font-bold text-xl hover:bg-brand-light transition-all shadow-xl">
                   Get Started Now
