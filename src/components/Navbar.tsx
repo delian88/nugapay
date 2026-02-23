@@ -47,9 +47,9 @@ export const Navbar = () => {
               {link.name}
             </Link>
           ))}
-          <button className="bg-slate-900 text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-slate-800 transition-all shadow-sm">
+          <Link to="/signup" className="bg-slate-900 text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-slate-800 transition-all shadow-sm">
             Get Started
-          </button>
+          </Link>
         </div>
 
         {/* Mobile Toggle */}
@@ -92,9 +92,9 @@ export const Navbar = () => {
                   {link.name}
                 </Link>
               ))}
-              <button className="w-full max-w-xs bg-brand text-white py-5 rounded-2xl font-bold text-xl mt-4 shadow-xl shadow-brand/20">
+              <Link to="/signup" className="w-full max-w-xs bg-brand text-white py-5 rounded-2xl font-bold text-xl mt-4 shadow-xl shadow-brand/20 text-center">
                 Get Started
-              </button>
+              </Link>
             </div>
           </motion.div>
         )}

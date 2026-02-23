@@ -6,6 +6,8 @@ import { Solutions } from './pages/Solutions';
 import { Business } from './pages/Business';
 import { Security } from './pages/Security';
 import { About } from './pages/About';
+import { Signup } from './pages/Signup';
+import { Contact } from './pages/Contact';
 
 export default function App() {
   return (
@@ -17,6 +19,8 @@ export default function App() {
           <Route path="business" element={<Business />} />
           <Route path="security" element={<Security />} />
           <Route path="about" element={<About />} />
+          <Route path="signup" element={<Signup />} />
+          <Route path="contact" element={<Contact />} />
         </Route>
       </Routes>
     </BrowserRouter>

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { 
   Shield, 
   Zap, 
@@ -100,13 +101,13 @@ const Hero = () => {
               Nuga Pay is the premier fintech subsidiary of Nuga Group. Seamlessly bridge the gap between local commerce and global opportunities with Nigeria's most trusted payment gateway.
             </motion.p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <button className="bg-brand text-white px-8 py-4 rounded-2xl font-bold text-lg hover:bg-brand-dark transition-all shadow-xl shadow-brand/20 flex items-center justify-center gap-2 group">
+              <Link to="/signup" className="bg-brand text-white px-8 py-4 rounded-2xl font-bold text-lg hover:bg-brand-dark transition-all shadow-xl shadow-brand/20 flex items-center justify-center gap-2 group">
                 Open Naira Account
                 <ArrowRight className="group-hover:translate-x-1 transition-transform" size={20} />
-              </button>
-              <button className="bg-white/80 backdrop-blur-sm text-slate-900 border border-slate-200 px-8 py-4 rounded-2xl font-bold text-lg hover:bg-white transition-all flex items-center justify-center gap-2">
+              </Link>
+              <Link to="/business" className="bg-white/80 backdrop-blur-sm text-slate-900 border border-slate-200 px-8 py-4 rounded-2xl font-bold text-lg hover:bg-white transition-all flex items-center justify-center gap-2">
                 View Business Rates
-              </button>
+              </Link>
             </div>
             
             <div className="mt-12 flex items-center gap-6">
@@ -508,12 +509,12 @@ export const Home = () => {
                 Join thousands of businesses already using Nuga Pay to power their global operations. Start your journey today.
               </motion.p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <button className="bg-white text-brand px-10 py-5 rounded-2xl font-bold text-xl hover:bg-brand-light transition-all shadow-xl">
+                <Link to="/signup" className="bg-white text-brand px-10 py-5 rounded-2xl font-bold text-xl hover:bg-brand-light transition-all shadow-xl">
                   Get Started Now
-                </button>
-                <button className="bg-brand-dark text-white border border-white/10 px-10 py-5 rounded-2xl font-bold text-xl hover:bg-black transition-all">
+                </Link>
+                <Link to="/contact" className="bg-brand-dark text-white border border-white/10 px-10 py-5 rounded-2xl font-bold text-xl hover:bg-black transition-all">
                   Talk to an Expert
-                </button>
+                </Link>
               </div>
             </div>
           </div>
