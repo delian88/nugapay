@@ -1,8 +1,9 @@
 <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
   <circle cx="50" cy="50" r="50" fill="#b01a70"/>
-  <!-- Stylized figures matching the provided icon -->
-  <circle cx="38" cy="32" r="7" fill="white"/>
-  <path d="M22 85C22 85 28 42 48 42C68 42 74 85 74 85" stroke="white" stroke-width="14" stroke-linecap="round" fill="none"/>
-  <circle cx="68" cy="42" r="7" fill="white"/>
-  <path d="M52 85C52 85 58 52 78 52C98 52 104 85 104 85" stroke="white" stroke-width="14" stroke-linecap="round" fill="none"/>
+  <!-- Left Figure -->
+  <circle cx="35" cy="30" r="8" fill="white"/>
+  <path d="M15 90C15 90 20 45 45 45C60 45 65 70 65 90" stroke="white" stroke-width="14" stroke-linecap="round" fill="none"/>
+  <!-- Right Figure -->
+  <circle cx="70" cy="40" r="8" fill="white"/>
+  <path d="M45 90C45 90 55 55 80 55C95 55 100 80 100 90" stroke="white" stroke-width="14" stroke-linecap="round" fill="none"/>
 </svg>
